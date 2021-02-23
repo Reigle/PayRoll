@@ -12,6 +12,14 @@ html{
   width: 100vw;
   height: 100vh;
 }
+.border-top {
+  border-top: solid 1px #00a85f;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #00a85f;
+}
+
 #web-salary-header {
   /* position: absolute;
   top: 0; */
