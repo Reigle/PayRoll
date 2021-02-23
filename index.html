@@ -93,34 +93,123 @@
     </div>
   </div>
   <div id="result_mode">
-    <div id="officer_result">
-      <p>役員報酬：<label class="officer_salary"></label></p>
-      <p>健康保険：<label class="health_insurance"></label></p>
-      <p>所得税：<label class="income_tax"></label></p>
-      <p>業務手当：<label class="job_salary"></label></p>
-      <p>介護保険：<label class="long_term_care_insurance"></label></p>
-      <p>住民税：<label class="resident_tax"></label></p>
-      <p>手取り：<label class="take_home_payment"></label></p>
-      <p>総支給：<label class="total_payment"></label></p>
-      <p>厚生年金：<label class="welfare_pension"></label></p>
-    </div>
+
+
+
     <div id="other_result">
-      <p>基本給：<label class="base_salary"></label></p>
-      <p>通勤手当：<label class="commuting_salary"></label></p>
-      <p>雇用保険：<label class="employment_insurance"></label></p>
-      <p>固定深夜割増手当：<label class="fixed_midnight_surcharge_salary"></label></p>
-      <p>固定残業手当：<label class="fixed_overtime_salary"></label></p>
-      <p>健康保険：<label class="health_insurance"></label></p>
-      <p>所得税：<label class="income_tax"></label></p>
-      <p>業務手当：<label class="job_salary"></label></p>
-      <p>介護保険：<label class="long_term_care_insurance"></label></p>
-      <p>成果給：<label class="outcome_salary"></label></p>
-      <p>住民税：<label class="resident_tax"></label></p>
-      <p>手取り：<label class="take_home_payment"></label></p>
-      <p>総支給：<label class="total_payment"></label></p>
-      <p>厚生年金：<label class="welfare_pension"></label></p>
+      <table class="result_table">
+        <thead>
+            <tr>
+                <th class="table_title">項目</th>
+                <th class="table_title">金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="koumoku in_salary">基本給</td>
+              <td class="result_label"><label class="base_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku in_salary">職務手当</td>
+              <td class="result_label"><label class="job_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku in_salary">成果給</td>
+              <td class="result_label"><label class="outcome_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku in_salary">固定残業手当</td>
+              <td class="result_label"><label class="fixed_overtime_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku in_salary">固定深夜割増手当</td>
+              <td class="result_label"><label class="fixed_midnight_surcharge_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku in_salary">通勤手当</td>
+              <td class="result_label"><label class="commuting_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">健康保険</td>
+              <td class="result_label"><label class="health_insurance"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">介護保険</td>
+              <td class="result_label"><label class="long_term_care_insurance"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">厚生年金</td>
+              <td class="result_label"><label class="welfare_pension"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">雇用保険</td>
+              <td class="result_label"><label class="employment_insurance"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">所得税</td>
+              <td class="result_label"><label class="income_tax"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">住民税</td>
+              <td class="result_label"><label class="resident_tax"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku result_salary">総支給</td>
+              <td class="result_label"><label class="total_payment"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku result_salary">手取り</td>
+              <td class="result_label"><label class="take_home_payment"></label>円</td>
+            </tr>
+        </tbody>
+      </table>
     </div>
-    <button id="restart">もう一度計算し直す</button>
+
+    <div id="officer_result">
+      <table class="result_table">
+        <thead>
+            <tr>
+                <th class="table_title">項目</th>
+                <th class="table_title">金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td class="koumoku in_salary">役員報酬</td>
+              <td class="result_label"><label class="officer_salary"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">健康保険</td>
+              <td class="result_label"><label class="health_insurance"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">介護保険</td>
+              <td class="result_label"><label class="long_term_care_insurance"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">厚生年金</td>
+              <td class="result_label"><label class="welfare_pension"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">所得税</td>
+              <td class="result_label"><label class="income_tax"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku out_salary">住民税</td>
+              <td class="result_label"><label class="resident_tax"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku result_salary">総支給</td>
+              <td class="result_label"><label class="total_payment"></label>円</td>
+            </tr>
+            <tr>
+              <td class="koumoku result_salary">手取り</td>
+              <td class="result_label"><label class="take_home_payment"></label>円</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="restartBlock"><button id="restart">もう一度計算し直す</button></div>
   </div>
   <footer id="web-salary-footer">
     <span id="footer_label">Length from 0 to GOAL</span>

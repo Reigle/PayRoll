@@ -34,6 +34,11 @@ html {
   text-align: center;
 }
 
+.restartBlock {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .btn {
   width: 150px;
   height: 40px;
@@ -96,10 +101,50 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
+  height: 40px;
   padding: 10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.result_table {
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #333;
+}
+
+thead, tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.table_title {
+  width: 50%;
+}
+
+.koumoku {
+  text-align: left;
+}
+
+.in_salary {
+  background-color: royalblue;
+}
+
+.out_salary {
+  background-color: red;
+}
+
+.result_salary {
+  background-color: green;
+}
+
+.result_label {
+  text-align: right;
 }
 
 #loader-bg {
