@@ -130,21 +130,21 @@ $(function() {
         $('#officer_result').hide();
       }
 
-      $('.base_salary').text(data.result.base_salary);
-      $('.commuting_salary').text(data.result.commuting_salary);
-      $('.employment_insurance').text(data.result.employment_insurance);
-      $('.fixed_midnight_surcharge_salary').text(data.result.fixed_midnight_surcharge_salary);
-      $('.fixed_overtime_salary').text(data.result.fixed_overtime_salary);
-      $('.health_insurance').text(data.result.health_insurance);
-      $('.income_tax').text(data.result.income_tax);
-      $('.job_salary').text(data.result.job_salary);
-      $('.long_term_care_insurance').text(data.result.long_term_care_insurance);
-      $('.officer_salary').text(data.result.officer_salary);
-      $('.outcome_salary').text(data.result.outcome_salary);
-      $('.resident_tax').text(data.result.resident_tax);
-      $('.take_home_payment').text(data.result.take_home_payment);
-      $('.total_payment').text(data.result.total_payment);
-      $('.welfare_pension').text(data.result.welfare_pension);
+      $('.base_salary').text(data.result.base_salary.toLocaleString());
+      $('.commuting_salary').text(data.result.commuting_salary.toLocaleString());
+      $('.employment_insurance').text(data.result.employment_insurance.toLocaleString());
+      $('.fixed_midnight_surcharge_salary').text(data.result.fixed_midnight_surcharge_salary.toLocaleString());
+      $('.fixed_overtime_salary').text(data.result.fixed_overtime_salary.toLocaleString());
+      $('.health_insurance').text(data.result.health_insurance.toLocaleString());
+      $('.income_tax').text(data.result.income_tax.toLocaleString());
+      $('.job_salary').text(data.result.job_salary.toLocaleString());
+      $('.long_term_care_insurance').text(data.result.long_term_care_insurance.toLocaleString());
+      $('.officer_salary').text(data.result.officer_salary.toLocaleString());
+      $('.outcome_salary').text(data.result.outcome_salary.toLocaleString());
+      $('.resident_tax').text(data.result.resident_tax.toLocaleString());
+      $('.take_home_payment').text(data.result.take_home_payment.toLocaleString());
+      $('.total_payment').text(data.result.total_payment.toLocaleString());
+      $('.welfare_pension').text(data.result.welfare_pension.toLocaleString());
       
       $('#input_mode').hide();
       $('#result_mode').show();

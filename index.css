@@ -110,16 +110,20 @@ html {
 .result_table {
   width: 90%;
   margin-left: 5%;
-  border: 1px solid #333;
+  border: 1px solid #000000;
   border-collapse: collapse;
 }
 
 td {
-  border: 1px solid #333;
+  border: 1px solid #000000;
+}
+
+th {
+  border: 1px solid #000000;
 }
 
 thead, tfoot {
-  background-color: #333;
+  background-color: #00a85f;
   color: #fff;
 }
 
@@ -132,15 +136,15 @@ thead, tfoot {
 }
 
 .in_salary {
-  background-color: royalblue;
+  background-color: #d2e3fc;
 }
 
 .out_salary {
-  background-color: red;
+  background-color: #ffddc6;
 }
 
 .result_salary {
-  background-color: green;
+  background-color: #c9efd6;
 }
 
 .result_label {
