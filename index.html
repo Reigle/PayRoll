@@ -17,38 +17,79 @@
   </div>
   <img src="./img/reigle_icon.png" class="reigle_icon"> 
   <div id="input_mode">
-    雇用形態：<select name="employment_status">
-      <option value="有期雇用">有期雇用</option>
-      <option value="正社員">正社員</option>
-      <option value="役員">役員</option>
-    </select><br/>
-    <div class="border-top border-bottom">
-      <span>現場単価</span>
-      <span><input type="number" name="unit_price" value="0" /></span>
+    <div class="block">
+      <span class="inner_title">雇用形態</span>
+      <span class="inner_data">
+        <select class="select_field" name="employment_status">
+          <option value="有期雇用">有期雇用</option>
+          <option value="正社員">正社員</option>
+          <option value="役員">役員</option>
+        </select>
+      </span>
     </div>
-    現場単価：<input type="number" name="unit_price" value="0" /><br/>
+
+    <div class="block">
+      <span class="inner_title">現場単価</span>
+      <span class="inner_data">
+        <input type="number" class="text_field" name="unit_price" value="0" />
+      </span>
+    </div>
     
-    <div id="input_officer_amount">役員報酬額：<input type="number" name="officer_amount" value="0" /><br/></div>
+    <div id="input_officer_amount" class="block">
+      <span class="inner_title">役員報酬額</span>
+      <span class="inner_data">
+        <input type="number" class="text_field" name="officer_amount" value="0" />
+      </span>
+    </div>
+
+    <div class="block">
+      <span class="inner_title">住民税</span>
+      <span class="inner_data">
+        <input type="number" class="text_field" name="resident_tax" value="0" />
+      </span>
+    </div>
+
+    <div class="block">
+      <span class="inner_title">交通費</span>
+      <span class="inner_data">
+        <input type="number" class="text_field" name="transportation_expenses" value="0" />
+      </span>
+    </div>
+    <div class="block">
+      <span class="inner_title">成果給</span>
+      <span class="inner_data">
+        <input type="number" class="text_field" name="performance_salary" value="0" />
+      </span>
+    </div>
+    <div class="block">
+      <span class="inner_title">扶養人数</span>
+      <span class="inner_data">
+        <select class="select_field" name="dependents">
+          <option value="0人">0人</option>
+          <option value="1人">1人</option>
+          <option value="2人">2人</option>
+          <option value="3人">3人</option>
+          <option value="4人">4人</option>
+          <option value="5人">5人</option>
+          <option value="6人">6人</option>
+          <option value="7人">7人</option>
+        </select>
+      </span>
+    </div>
+    <div class="block">
+      <span class="inner_title">年齢</span>
+      <span class="inner_data">
+        <select class="select_field" name="age">
+          <option value="40歳未満">40歳未満</option>
+          <option value="40歳以上">40歳以上</option>
+        </select>
+      </span>
+    </div>
+    <div class="border-top"></div>
     
-    住民税：<input type="number" name="resident_tax" value="0" /><br/>
-    交通費：<input type="number" name="transportation_expenses" value="0" /><br/>
-    成果給：<input type="number" name="performance_salary" value="0" /><br/>
-    扶養人数：<select name="dependents">
-      <option value="0人">0人</option>
-      <option value="1人">1人</option>
-      <option value="2人">2人</option>
-      <option value="3人">3人</option>
-      <option value="4人">4人</option>
-      <option value="5人">5人</option>
-      <option value="6人">6人</option>
-      <option value="7人">7人</option>
-    </select><br/>
-    年齢：<select name="age">
-      <option value="40歳未満">40歳未満</option>
-      <option value="40歳以上">40歳以上</option>
-    </select><br/>
-    
-    <button id="subAction">ボタン</button>
+    <div class="btnBlock">
+      <button class="btn" id="subAction">計算する</button>
+    </div>
   </div>
   <div id="result_mode">
     <div id="officer_result">
@@ -81,7 +122,7 @@
     <button id="restart">もう一度計算し直す</button>
   </div>
   <footer id="web-salary-footer">
-    <span>Length from 0 to GOAL</span>
+    <span id="footer_label">Length from 0 to GOAL</span>
   </header>
 </body>
 </html>
