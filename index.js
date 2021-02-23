@@ -3,6 +3,21 @@ $(function() {
   var employmentStatus = '有期雇用';
   var result = {};
 
+  // startload();
+  // setTimeout(stopload,1000);
+
+  function startload(){
+    var h = $(window).height();
+    $('#wrap').css('display','none');
+    $('#loader-bg ,#loader').height(h).css('display','block');
+  }
+
+  function stopload(){
+    $('#wrap').css('display','block');
+    $('#loader-bg').delay(900).fadeOut(800);
+    $('#loader').delay(600).fadeOut(300);
+  }
+
   initAction()
   testMode()
 
@@ -32,6 +47,7 @@ $(function() {
   });
 
   $('#subAction').on('click', function() {
+    startload();
     if (document.getElementsByName('employment_status')[0].value === '役員') {
       payRoll(
         document.getElementsByName('unit_price')[0].value,
@@ -132,10 +148,12 @@ $(function() {
       
       $('#input_mode').hide();
       $('#result_mode').show();
+      stopload();
     })
     .fail(function() {
       console.log('==============API失敗');
-      alert('正しい結果を得られませんでした。');
+      // alert('正しい結果を得られませんでした。');
+      stopload();
     });
   }
 });
