@@ -1,8 +1,9 @@
-*{
+* {
   margin:0;
   padding:0;
-  }
-html{
+}
+
+html {
   font-size: 16px;
   font-family: source-han-sans-japanese, sans-serif;
   font-style: normal;
@@ -12,6 +13,7 @@ html{
   width: 100vw;
   height: 100vh;
 }
+
 .border-top {
   border-top: solid 1px #00a85f;
 }
@@ -20,33 +22,28 @@ html{
   border-bottom: solid 1px #00a85f;
 }
 
-/* .block {
-  border-top: solid 1px #00a85f;
-  font-size: 80px;
-} */
-
 .block {
   border-top: solid 1px #00a85f;
   display: table;
   width: 100%;
-  height: 80px;
+  /* height: 40px; */
 }
 
 .btnBlock {
-  margin-top: 100px;
+  margin-top: 40px;
   text-align: center;
 }
 
 .btn {
-  width: 50vw;
-  height: 80px;
+  width: 150px;
+  height: 40px;
 }
 
 .inner_title {
   display: table-cell;
   vertical-align: middle;
   width: 40%;
-  font-size: 44px;
+  /* font-size: 44px; */
   text-align: left;
   padding-left: 30px;
 }
@@ -64,21 +61,20 @@ html{
   width: 70%;
   text-align: right;
   border: none;
-  font-size: 55px;
+  /* font-size: 55px; */
 }
 
 .select_field {
   height: 90%;
-  /* width: 70%; */
   border: none;
-  font-size: 55px;
+  /* font-size: 55px; */
 }
 
 #web-salary-header {
   /* position: absolute;
   top: 0; */
   width: 100%;
-  height: 60px;
+  height: 30px;
   background-color: #00a85f;
 }
 #web-salary-footer {
@@ -86,27 +82,26 @@ html{
   display: table;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 30px;
   background-color: #00a85f;
   text-align: center;
 }
 #footer_label {
   display: table-cell;
   vertical-align: middle;
-  font-size: 44px;
+  font-size: 20px;
   color: white;
 }
 .reigle_icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 40vw; */
-  height: 7vh;
-  /* max-width: 150px; */
+  height: 60px;
   padding: 10px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 #loader-bg {
   display: none;
   position: fixed;
@@ -114,7 +109,6 @@ html{
   height: 100%;
   top: 0px;
   left: 0px;
-  /* background: gray; */
   background: #000;
   z-index: 1;
   opacity: 0.5;
@@ -133,3 +127,12 @@ html{
   color: #fff;
   z-index: 2;
 }
+
+/* @media screen and (max-width: 480px) {
+  .block {
+    border-top: solid 1px #00a85f;
+    display: table;
+    width: 100%;
+    height: 80px;
+  }
+} */
